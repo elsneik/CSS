@@ -1,0 +1,16 @@
+body{background-color: blue;}
+/* Sintaxis 
+
+Se utiliza para definir estulos que se aplican alos elementos de una pagina web.
+consta de 3 componentes principales
+selector {
+
+Propiedad: valor;//punto y coma despues de cada valor
+Propiedad: valor // ; se puede omitir en la ultima propiedad
+
+
+*/
+h1{color: cadetblue;
+font-size: 120px;
+font-family:sans-serif
+}
