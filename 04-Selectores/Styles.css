@@ -1,51 +1,202 @@
-body{background-color: aliceblue;}
-/* Selectores
+/* 
 
-son patrones que permiten seleccionar y aplicar estilos especificos a elementos de una pagina web
-tipos de selectores
+  Selectores
 
-1.selectores basicos
+  Son patrones que permiten seleccionar y aplicar estilos específicos a elementos de una página web.
 
--selector universal
--selectores de tipo
+  Tipos de selectores
 
-2.Selectores de clase
+  1. Selectores Básicos
 
-3.Selectores de ID
+    - Selector Universal
+    - Selectores de Tipo
 
-4.Selectores combinados
- -descendienes
- -hijo directo
- -elemento adjcente
- hermano general
+  2. Selectores de Clase
 
- 5.Selector de atriburos
- -atributo
- -atributo - valor
+    Seleccionan los elementos que tiene una clase específica.
 
- 6.Selectores avanzados
+    Se usa la 'notación' de punto (.) antes del nombre de la clase.
 
- -pseudo clases
- -pseudo elementos
+    .nombreClase{
+      propiedad: valor;
+    }
+
+  3. Selectores de ID
+
+    Seleccionan un elemento único con un identificador específico.
+
+    Se usa la 'notación' de numeral (#)
+   antes del nombre del ID
+
+     nombreID{
+      propiedad: valor;
+    }
+
+  4. Selectores Combinados
+
+    - Descendientes
+
+      Seleccionan elementos dentro de otro elementos.
+
+      elemnto elementoInterno{
+        propiedad: valor;
+      }
+
+    - Hijo directo
+
+      Selecciona elementos que son hijos directos de un elemento padre.
+
+      elemento -> elementoshijos{
+        propiedades: valor;
+        }
+
+
+    - Elemento Adjacente
+    - Hermano General
+
+  5. Selectores de Atributos.
+
+    - Atributo
+    - Atributo - Valor
+
+  6. Selectores Avanzados
+
+    - Pseudo-clases
+    Seleccionamos elementos en un estado en particular
+
+    Elemento:pseudoclase {
+    Propiedad:valor;
+    }
+    - Pseudo-elementos.
 
 */
 
-    /* Selectores basicos */
+/* 
 
-  /* Universal */
+Selectores Básicos
 
-  *{
-    border: 2px solid red;
-    /* Reset */
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
+*/
 
-  /* Selectores de tipo  -> señeccionan un elemento de html */
+/* Universal -> seleccionar todos los elementos de un documento */
 
-  body{background-color: yellowgreen;}
-  h1{color: crimson;}
+* {
+  /* border: 2px solid red; */
 
-  p{font-size: 30px;}
-  header{background-color: cornflowerblue;}
+  /* Resset básico */
+
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+/* Selectores de Tipo -> Selecionan un tipo de elemento htmil */
+
+body {
+  background-color: cornflowerblue;
+}
+
+h1 {
+  color:beige
+}
+
+p {
+  font-size: 24px;
+}
+
+header {
+  background-color: rgb(127, 29, 169);
+}
+
+/* 22/11/2024 */
+
+/* Selectores de Clase */
+
+.content{
+  background-color: rgb(16, 108, 108);
+  padding: 48px;
+}
+
+.hero{
+  background-color: lightcoral;
+  padding: 24px;
+}
+
+.hero-title{
+  background-color: rgb(207, 78, 158);
+  color:rgb(57, 0, 97);
+  padding: 16px;
+  text-align: center;
+}
+
+/* Selector de ID */
+
+#about-title{
+  color: honeydew;
+  font-size: 72px;
+  font-family: sans-serif;
+}
+
+/* Combinado - Elementos Descendientes */
+
+aside section{
+  background-color: crimson;
+  padding: 48px;
+}
+
+.asside-section h3{
+  color: blanchedalmond;
+  text-align: right;
+  padding: 24px;
+  background-color: lightcoral;
+}
+
+/*Combinados - hijos directos */
+
+
+ul > li{
+
+  background-color: aqua;
+}
+ .lista > li{
+  font-size: 9px;
+
+
+ }
+ /*Combinados- Elemento adjacente*/
+ h3 + ul {
+  list-style: none;
+ }
+ .bro + li{
+  background-color: #f00000;
+  color: aliceblue;
+ }
+ /*combinados - hermano general*/
+ .bro + li ~ li{
+background-color: chartreuse;
+ }
+ 
+ .tercero ~ li{
+  color: black;
+  font-size: 40px;
+ }
+
+ /*Selectores de atributo*/
+ a[Href]{display: block;
+text-decoration: none
+color(xyz-d65 red green blue);}
+
+/*Selector de atriburo con valor*/
+a[href="https://www.instagram.com"]{font-size: 48px;
+color: orangered;}
+ 
+/*pseudo clases*/
+a:hover{
+  background-color: purple;
+  color: white;
+  text-decoration: underline;
+}
+
+a:focus {border: 10px #f00000;}
+a::after{content: "💥";}
+a::before{content: "este es un enlace hacia ";}
