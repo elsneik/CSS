@@ -1,0 +1,43 @@
+body{background-color: aqua;}
+h1{font-family: "poppins", sans-serif;
+font-weight: 700;
+font-style:italic;}
+
+p{font-family: "poppins", sans-serif;
+font-weight: 400;}
+
+.title {font-family: "Inter";
+font-weight:800;
+font-style: italic;}
+
+.title:hover {font-weight: 300;
+transition: font-weight 1s ease;}
+
+.text{font-family: "Inter";
+  font-weight:200;
+  font-style:normal;}
+
+  /*
+  Elegir 2 fuentes distintas en googles fonts.
+  Una para el titulo 
+  una para el parrafo 
+  crer la regla de css para cada elemento con un selector de id*/
+
+  #title{font-family: "Jaro";
+  font-weight: 700;
+font-style: normal;}
+#text{font-family: "montserrat";
+  font-weight: 300;
+  font-style:italic;
+}
+
+@font-face {
+  font-family: "Halo-Dek";
+  src: url("./Fonts/Halo-Dek.otf"),format(otf);
+}
+@font-face {font-family: "sanva-font";
+src: url("./Fonts/sanva-font.ttf"),format(ttf);}
+
+#title {font-family: "Halo-Dek";}
+
+#text {font-family: "sanva-font";}
