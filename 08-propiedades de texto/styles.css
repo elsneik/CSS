@@ -1,0 +1,44 @@
+body{background-color: blueviolet;}
+/*
+propiedades de texto estan relacionadas con el estilo o formato del texto.
+
+Permiten controlar su apariencia alienacion, espaciado y decoración.
+
+Principales
+
+color:-> Define color del texto.Recibe diferentes tipos de parametros: Keywird, hexadecimal, rgb o rgba, hsl, transparent
+
+Font family: -> Define la familia tipografica del texto. recibe los nombres de las familias. si son de dos palabras entre comillas. y acepta mas de dos valores separados por coma y como fuentes de respaldo 
+
+Font size: -> Define el tamaño del texto.Acepta el valores en px, em y rem, porcentaje, terminos predefinidos
+
+Font style: -> El estilo de la fuenta y recibe 3 parametros normal, italic y oblique
+
+Text align: -> define la alineacion del texto. Recibe los valores left, right, center, justify start y end.
+
+Text decoration: -> Añade una linea transversal al texto.Recibe los valores: none, underline, overline, line-through
+*/
+
+h1 {
+  color: red; /* keywords*/
+  font-family: 'Times New Roman', Arial;
+  font-size: 94 px;
+  font-size: 300%;
+  font-size: normal;
+  font-style: oblique;
+  text-align: justify;
+  text-decoration: underline;
+}
+
+p {
+  color: bisque;
+  font-family: 'Courier New',Arial,;
+  font-size: 32 px;
+  font-size: 100%;
+  font-style: italic;
+  font-size: medium;
+  text-align: left;
+text-decoration: line-through;
+}
+
+a {}
