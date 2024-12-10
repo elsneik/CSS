@@ -1,0 +1,27 @@
+body{
+  background-color: darkslateblue;
+  color: whitesmoke;
+  font-family:'Courier New', Courier, monospace;
+}
+
+.bloque{
+  background-color: lightcoral;
+  width: 100px;
+  width: 50%;
+
+  height: 100px;
+  height: 50%;
+  height: 100vh;
+}
+
+.linea{
+  display: block;
+
+  display: inline-block;
+
+  width: 100px;
+  height: 100px ;
+
+  background-color: rgb(96, 212, 232);
+
+}
