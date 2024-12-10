@@ -1,4 +1,4 @@
-body{background-color: blueviolet;}
+body{background-color: rgb(189, 97, 246);}
 /*
 propiedades de texto estan relacionadas con el estilo o formato del texto.
 
@@ -17,28 +17,57 @@ Font style: -> El estilo de la fuenta y recibe 3 parametros normal, italic y obl
 Text align: -> define la alineacion del texto. Recibe los valores left, right, center, justify start y end.
 
 Text decoration: -> Añade una linea transversal al texto.Recibe los valores: none, underline, overline, line-through
+
+Text-transform: -> Controla la capitalización del texto.Recibe los valores: uppercase, lowercase y capitalize
+
+ Line-height -> Espacio entre las lineas de texto.Recibe valores en px,%, em y rem, un valor sinunidad será relativo al tamaño de la fuente.
+
+ Letter-spacing -> Espacio entre letras. Recibe valores en px,en,rem y valor normal
+ 
+ word-spacing-> Espacio enntre palabras.Recibe valores en px,en,rem y valor normal
+
+ text-shadow-> Sombra del texto. Recibe los valores en el siguiente orden: offset-x offset-y blur color
+ 
+ 
 */
 
 h1 {
   color: red; /* keywords*/
   font-family: 'Times New Roman', Arial;
-  font-size: 94 px;
+  font-size: 94px;
   font-size: 300%;
   font-size: normal;
   font-style: oblique;
   text-align: justify;
   text-decoration: underline;
+  text-transform: uppercase;
+  line-height: 120px;
+  line-height: 150%;
+  letter-spacing: 20px;
+  word-spacing: 2rem;
+  word-spacing: 5em;
+  word-spacing: normal;
+  text-shadow: 10px 10px 5px blue;
 }
 
 p {
-  color: bisque;
+  color: rgb(0, 0, 0);
   font-family: 'Courier New',Arial,;
-  font-size: 32 px;
+  font-size: 32px;
   font-size: 100%;
   font-style: italic;
   font-size: medium;
   text-align: left;
 text-decoration: line-through;
+text-transform: capitalize;
+line: height 100%;
+letter-spacing: normal;
+word-spacing: 5em;
 }
 
-a {}
+.important {
+  text-decoration: underline;
+}
+a { 
+  color: crimson;
+}
