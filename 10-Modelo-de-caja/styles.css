@@ -1,0 +1,88 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  background-color: blueviolet;
+}
+
+/*
+
+Box Model
+
+Es un concepto fundamental que describe como los elementos de una pagina web se organizan y calculan su tamaño.
+
+1-content
+
+Es el area donde se encuentra el texto, las imagenes y otro alemento hijo.El tamaño de esta area se define con la spropiedades width y heigth.
+
+2-padding
+
+Es el espacio entre el contenido y el borde de la caja.Esto nos ayuda a crear el espacio entre el contenido.
+La propiedad de padding es un "shorthand" que controlalos 4 lados posibles de la caja.
+
+padding: top rigth bottom left;
+padding:top left/ rigth bottom;
+padding: top/ bottom left/ rigth
+
+3.border
+
+Es el borde que rodea el content y el padding.Podemos personalizar grosor y color, tambien es una propiedad "shorthand"
+
+ border: ancho estilo color;
+
+ border-width: valor;
+ border-style: valor;
+ border-color: valor;
+
+ Valores Estilo de borde:
+ -none
+ -hidden
+ -solid
+ -dotted
+ -dashed
+ -double
+ -groove
+ -ridge
+ etc
+ 
+ 4.Margin
+
+ Es la propiedad que nos permite tener espacio entre el borde de un elemento y otros elementos de la pagina.Tambien es un "shorthand"
+
+
+
+*/
+h2{
+  margin: 8px 16px 24px 32px;
+  border: 5px solid black;
+  padding: 24px;
+  width: 200px;
+  height: 80px;
+  background-color: white;
+}
+
+img{
+  margin: 10px 10px 10px 10px;
+  border: 5px double black;
+  padding: 25px 30px;
+  width: 500px;
+  background-color: rgb(16, 168, 2);
+}
+
+ul{
+  margin: 40px 8px;
+border: 4px dotted greenyellow;
+  padding: 24px 48px 64px;
+  width: 400px;
+  height: auto;
+  background-color: aqua;
+}
+
+li {
+  margin: 12px;
+  padding: 8px 16px 24px 32px;
+height: 100px;
+  background-color: chartreuse;
+}
