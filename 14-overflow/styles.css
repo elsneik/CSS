@@ -1,0 +1,50 @@
+body{
+  background-color: rgb(68, 5, 226);
+  color: aliceblue;
+}
+/*
+
+Overflow 
+que significa desbordamiento
+Es la propiedad que controla
+el comportamiento de un contenedor cuando el contenido se desborda
+
+Desbordar-> Se refiere a cuando el contneido sale por los bordes de su contenedor
+
+es una propiedad shorthand que engloba 2 propiedades (x,y)
+
+tiene 4 posibles valores
+
+visible->valor por defecto
+
+hidden->El contenido que se desborde se ocultara
+
+scroll->Esto hace que aparezcan barras de scroll en el eje asignado (x,y)
+
+auto->Apareceran las barras de scroll en caso de ser necesarios
+
+*/
+.box{
+  width:200px ;
+  height: 500px;
+  background-color: coral;
+  overflow: visible;
+  overflow: hidden;
+  overflow: scroll;
+  overflow: auto;
+}
+
+.text{
+font-size:30px ;
+}
+
+.box2{
+  width: 400px;
+  height: 400px;
+  background-color: aqua;
+ border-radius: 42px;
+ overflow: hidden;
+}
+img{
+  display: block;
+}
