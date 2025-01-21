@@ -1,0 +1,164 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: sans-serif;
+  color: aliceblue;
+background-color: darkcyan;
+}
+
+.container{
+  margin: auto;
+  width: 300px;
+  height: 300px;
+  background-color: aqua;
+}
+
+.box{
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+}
+
+.box1{
+  position: relative;
+  top: 20px;
+  left: 29px;
+  z-index: 1;
+}
+
+.box2{
+  position: relative;
+ 
+}
+
+.box-3 {
+  z-index: 15;
+  position: absolute;
+  top: 100px;
+  right: 0;
+  bottom: 0;
+  left: 200px;
+  background-color:
+}
+
+.box-4 {
+  z-index: 40;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  background-color: rgb(216, 207, 112);
+}
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 50px;
+  text-align: center;
+  background-color: cornsilk;
+}
+
+nav a{
+  font-size: 18px;
+  display: inline-block;
+  padding: 12px 8px;
+  text-decoration: none;
+  color: rgb(77, 119, 77);
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+.button {
+  z-index: 20;
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  width: 100px;
+  height: 100px;
+  font-size: 48px;
+  text-align: center;
+  padding: 10px;
+  border-radius: 50%;
+  background-color: rgb(126, 25, 185);
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: rgb(12, 88, 186);
+}
+
+main {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  margin-top: 50px;
+  background-color: rgb(8, 30, 52);
+}
+
+main section {
+  padding: 0 24px;
+}
+
+section h2 {
+  z-index: 10;
+  position: sticky;
+  top: 50px;
+  font-size: 34px;
+  background-color: rgb(6, 85, 72);
+}
+
+section p {
+  font-size: 24px;
+  line-height: 1.5;
+  margin-bottom: 24px;
+}
+
+/* 
+
+Position
+
+Es la propiedad que nos permite posicionar los elementos del html.
+
+concepto importante:
+1-Flujo de renderizado-Los elementos en html se dibujan de izquierda a derecha y de arriba hacia abajo
+
+2-Espacio reservado-Es el espacio que tiene un elemento asignado en el navegador.
+
+3-Elemento posicionado-Es cuando su propiedad "position" tienen un valor distinto a "static", que es el valor por default.
+
+4-Stacking Context: Contexto de Apilamiento. es el orden en el que se superponen o apilan los elementos en el html
+
+al posicionar un elemento se habilitan 5 propiedad que podemos usar para mover el elemento en 3 ejes. (x,y,z) 
+
+top-Movera el elemento desde la parte superior
+right-Movera el elemento desde l parte derecha
+bottom-Movera el elemento desde la parte inferior
+Left que movera el elemento desde la parte izquierda
+
+-Los elementos tienen su punto de origen (0,0) en la esquina superior izquierda.
+-La distancia a moverse se indica en px y acepta valores negativos.
+-si a un elemento le declaramos la propiedad top buttom deja de funcionar lo mismo con left con right
+
+z-index-Nos permite mover el elemento en el contexto de apilamiento. Recibe valores en numero o indices.
+
+los posibles valores que "position" recibe son:
+
+Static-Valor default de kis elementos.Con este valr el elemento no esta posicionado y no podemos moverlo.
+
+Relative-El elemento mantiene su posicion y medidas en el flujo de renderizado. Mantendra su espacio reservado. si lo movemos usara su contenedor como referencia.
+
+Absolute-
+
+Fixed-
+
+Sticky-Este valor es una mezcla de relative y fixed, con este valor, las propieddes top rightl,bottom y left no sirven para mover el elemento , si no para indicarle en que punto pasara a tener un comportamiento similar a fixed.,
+
+*/
